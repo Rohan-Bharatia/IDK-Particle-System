@@ -1,0 +1,22 @@
+:root {
+  --bg-col: #0f0f0f;
+  --cnvs-brdr-col: #1f1f1f;
+  --cnvs-bg-col: #000000;
+}
+
+*, body {
+  margin: 0px;
+  padding: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: var(--bg-col);
+}
+
+#canvas {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid var(--cnvs-brdr-col);
+  background-color: var(--cnvs-bg-col);
+}
