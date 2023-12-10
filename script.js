@@ -117,7 +117,14 @@ class Effect {
     }
     
     for(let i = 0; i < this.particlesNum; i++) {
-      this.particles.push(new Particle(this, "#cf2d16"));
+      let colors = ["#ff0000", "#ff5500", "#ff8500", "#ffce00", "#ffff00", "#afff00", "#70ff00", "#36ff00", "#00ff00", "#00b54a", "#007a85", "#003bca", "#0000ff", "#7a00ff", "#ff00ff", "#ff008f", "#ff0000"];
+      
+      let color;
+      for(let c = 0; c < colors.length; c++) {
+        color = colors[c];
+        
+        this.particles.push(new Particle(this, color));
+      }
     }
   }
   
