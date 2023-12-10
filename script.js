@@ -14,7 +14,7 @@ class Particle {
     this.speedX = 0;
     this.speedY = 0;
     this.speedMod = Math.random() * 3 + 0.1;
-    this.col = [col];
+    this.col = col;
     this.history = [{
       x: this.x,
       y: this.y,
