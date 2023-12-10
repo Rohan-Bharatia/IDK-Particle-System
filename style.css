@@ -1,5 +1,7 @@
 :root {
   --bg-col: #0f0f0f;
+  --cnvs-lt: 50%;
+  --cnvs-trnslt-lt: calc(0 - var(--cnvs-lt));
   --cnvs-brdr-col: #1f1f1f;
   --cnvs-bg-col: #000000;
 }
@@ -14,9 +16,9 @@
 
 #canvas {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  left: var(--cnvs-lt);
+  top: var(--cnvs-lt);
+  transform: translate(var(--cnvs-trnslt-lt), var(--cnvs-trnslt-lt));
   border: 2px solid var(--cnvs-brdr-col);
   background-color: var(--cnvs-bg-col);
 }
